@@ -1,0 +1,82 @@
+{
+“name”: “erents-app”,
+“version”: “1.0.0”,
+“description”: “🏠 Smart Apartment Renting Platform for Somalia”,
+“author”: “BARRE - Economist and Senior Somali Government Official”,
+“homepage”: “https://honbarre.github.io/erents-app”,
+“repository”: {
+“type”: “git”,
+“url”: “https://github.com/honbarre/erents-app.git”
+},
+“keywords”: [
+“real-estate”,
+“somalia”,
+“rental”,
+“apartment”,
+“property”,
+“firebase”,
+“react”,
+“mogadishu”
+],
+“license”: “MIT”,
+“private”: false,
+“dependencies”: {
+“react”: “^18.2.0”,
+“react-dom”: “^18.2.0”,
+“react-scripts”: “5.0.1”,
+“typescript”: “^5.0.4”,
+“lucide-react”: “^0.263.1”,
+“firebase”: “^10.1.0”,
+“react-router-dom”: “^6.14.2”,
+“framer-motion”: “^10.12.18”,
+“react-hook-form”: “^7.45.2”,
+“date-fns”: “^2.30.0”,
+“react-hot-toast”: “^2.4.1”,
+“react-image-gallery”: “^1.2.11”,
+“react-map-gl”: “^7.1.3”,
+“mapbox-gl”: “^2.15.0”
+},
+“devDependencies”: {
+“@types/react”: “^18.2.15”,
+“@types/react-dom”: “^18.2.7”,
+“eslint”: “^8.45.0”,
+“prettier”: “^3.0.0”,
+“firebase-tools”: “^12.4.8”
+},
+“scripts”: {
+“start”: “react-scripts start”,
+“build”: “react-scripts build”,
+“test”: “react-scripts test”,
+“eject”: “react-scripts eject”,
+“lint”: “eslint src –ext .ts,.tsx”,
+“format”: “prettier –write src/**/*.{ts,tsx}”,
+“predeploy”: “npm run build”,
+“deploy:firebase”: “firebase deploy”,
+“deploy:vercel”: “vercel –prod”,
+“deploy:netlify”: “netlify deploy –prod –dir=build”,
+“build:mobile”: “react-native run-android”,
+“setup:env”: “cp .env.example .env”
+},
+“eslintConfig”: {
+“extends”: [
+“react-app”,
+“react-app/jest”
+]
+},
+“browserslist”: {
+“production”: [
+“>0.2%”,
+“not dead”,
+“not op_mini all”
+],
+“development”: [
+“last 1 chrome version”,
+“last 1 firefox version”,
+“last 1 safari version”
+]
+},
+“engines”: {
+“node”: “>=16.0.0”,
+“npm”: “>=7.0.0”
+}
+}
